@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
+  <title>Amazon</title>
   <style>
     body {
-      background-color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    .login-container {
-      margin: 0 auto;
-      width: 300px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .form-group {
-      margin-bottom: 10px;
-    }
-    .form-group label {
-      display: block;
-      font-weight: bold;
-    }
-    .form-group input[type="text"],
-    .form-group input[type="password"] {
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .form-group input[type="submit"] {
-      width: 100%;
+    header {
+      background-color: #232f3e;
       padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
+      color: #ffffff;
+      text-align: center;
     }
-    .form-group input[type="submit"]:hover {
-      background-color: #45a049;
+    nav {
+      background-color: #131921;
+      padding: 10px;
+      color: #ffffff;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #232f3e;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <form action="/login" method="post">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Login">
-      </div>
-    </form>
-  </div>
+  <header>
+    <h1>Welcome to Amazon</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Cart</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Featured Products</h2>
+    <div>
+      <h3>Product 1</h3>
+      <p>Description of Product 1</p>
+    </div>
+    <div>
+      <h3>Product 2</h3>
+      <p>Description of Product 2</p>
+    </div>
+    <div>
+      <h3>Product 3</h3>
+      <p>Description of Product 3</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Amazon. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
